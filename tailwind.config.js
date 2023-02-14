@@ -2,17 +2,28 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    
+
   ],
   theme: {
     container: {
       center: true,
     },
+    backgroundSize: {
+      '75%': '75%',
+      '93%': '93%',
+      '16': '4rem',
+    },
+    skew: {
+      'minus24': '-24deg',
+      '24': '24deg',
+    },
     extend: {
       animation: {
         fade3: 'fadeIn3 3s forwards',
         fade4: 'fadeIn4 4s forwards',
-        slideUp: 'slideUp 0.9s cubic-bezier(0.65, 0, 0.35, 1) both',
+        slideUp: 'slideUp 1s cubic-bezier(0.65, 0, 0.35, 1) both',
+        moveRight: 'moveRight 3.5s linear alternate',
+        moveLeft: 'moveLeft 3.5s linear alternate',
       },
       keyframes: ({
         fadeIn3: {
@@ -27,16 +38,36 @@ module.exports = {
           '0%': { transform: 'translateY(25%)' },
           '100%': { transform: 'translateY(0)' },
         },
+        moveRight: {
+          '0%': { left: '18.8%', filter: "grayscale(100%)"  },
+          '20%': { left: '18.8%', filter: "grayscale(100%)"  },
+          '80%': { left: '23.8%', filter: "grayscale(0%)" },
+          '100%': { left: '23.8%', filter: "grayscale(0%)" },
+        },
+        moveLeft: {
+          '0%': { left: '55.9%', filter: "grayscale(100%)"  },
+          '20%': { left: '55.9%', filter: "grayscale(100%)"  },
+          '80%': { left: '51.9%', filter: "grayscale(0%)"},
+          '100%': { left: '51.9%', filter: "grayscale(0%)"},
+        },
       }),
-      colors:{
+      colors: {
         gray: '#828282'
       },
       backgroundImage: {
-        'headerBG' : "url('./modules/assets/Header/title_background.png')",
+        'headerBG': "url('./modules/assets/Header/title_background.png')",
+        'headeLaptopLeft': "url('./modules/assets/Header/laptop_front.png')",
+        'headeLaptopLeftScreen': "url('./modules/assets/Header/header-monitor-dark.png')",
+        'headeLaptopLeftScreenBlink': "url('./modules/assets/Header/header-blink.png')",
+        'headeLaptopLeftScreenEffect': "url('./modules/assets/Header/lensflare_header.png')",
+        'headeLaptopRight': "url('./modules/assets/Header/laptop_right.png')",
+        'intelLogo': "url('./modules/assets/Header/logo_i9logo.png')",
+        'nvidiaLogo': "url('./modules/assets/Header/nvidia_logo.png')",
       },
       fontFamily: {
         EurostileReg: ['Eurostile-Reg', 'sans-serif'],
         EurostileHeavy: ['Eurostile-Hea', 'sans-serif'],
+        EurostileBol: ['Eurostile-Bol', 'sans-serif'],
       },
     },
   },

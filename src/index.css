@@ -10,6 +10,10 @@
   font-family: "Eurostile-Hea";
   src: url("./modules/assets/Fonts/Eurostile-Hea.otf");
 }
+@font-face {
+  font-family: "Eurostile-Bol";
+  src: url("./modules/assets/Fonts/Eurostile-Bol.otf");
+}
 
 body {
   margin: 0;

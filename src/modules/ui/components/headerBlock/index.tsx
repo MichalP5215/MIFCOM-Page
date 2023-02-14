@@ -8,47 +8,44 @@ const HeaderBlock: React.FunctionComponent<InterfaceHeaderBlock> = (props) => {
   const [showHeadingFooter, setShowHeadingFooter] = useState(false);
   const [showHeadingFooterTitle, setShowHeadingFooterTitle] = useState(false);
   const [showHeadingFooterSubtitle, setShowHeadingFooterSubtitle] = useState(false);
+  const [showHeadingEffect, setShowHeadingEfect] = useState(false);
+  const [showIntelLogo, setShowIntelLogo] = useState(false);
+  const [showNvidiaLogo, setShowNvidiaLogo] = useState(false);
 
   useEffect(() => {
     const headerTimer = setTimeout(() => {
       setShowBacgroundImage(!showBacgroundImage)
-      console.log('show HEADER');
-    }, 3000)//3000
-    return () => clearTimeout(headerTimer);
-  }, []);
-  useEffect(() => {
+    }, 2600)
     const headingTimer = setTimeout(() => {
       setShowHeading(!showHeading)
-      console.log('show Heading');
-    }, 5000)//5000
-    return () => clearTimeout(headingTimer);
-  }, []);
-  useEffect(() => {
+    }, 3000)
     const headingFooterTimer = setTimeout(() => {
       setShowHeadingFooter(!showHeadingFooter)
-      console.log('show Heading');
-    }, 6000)//5000
-    return () => clearTimeout(headingFooterTimer);
-  }, []);
-  useEffect(() => {
+    }, 4000)
     const headingFooterTitleTimer = setTimeout(() => {
       setShowHeadingFooterTitle(!showHeadingFooterTitle)
-      console.log('show Heading');
-    }, 7000)//5000
-    return () => clearTimeout(headingFooterTitleTimer);
-  }, []);
-  useEffect(() => {
+    }, 4500)
     const headingFooterDescriptionTimer = setTimeout(() => {
       setShowHeadingFooterSubtitle(!showHeadingFooterSubtitle)
-      console.log('show Heading');
-    }, 8000)//5000
-    return () => clearTimeout(headingFooterDescriptionTimer);
+    }, 5000)
+    const headingShowEffect = setTimeout(() => {
+      setShowHeadingEfect(!showHeadingEffect)
+    }, 2600)
+    const headingShowIntelLogo = setTimeout(() => {
+      setShowIntelLogo(!showIntelLogo)
+    }, 1800)
+    const headingShowNvidiaLogo = setTimeout(() => {
+      setShowNvidiaLogo(!showNvidiaLogo)
+    }, 2200)
+    //  return () => clearTimeout(() => {
+    //    headerTimer});   
   }, []);
+
 
   return (<>
     <div className='container'>
       {showBacgroundImage ?
-        <div className={'animate-fade3 bg-headerBG h-[90vh] leading-none uppercase justify-center text-center'}>
+        <div className={'animate-fade3 bg-headerBG bg-no-repeat h-[90vh] leading-none uppercase justify-center text-center'}>
           {showHeading ?
             <div className='animate-fade4 pt-[60px]'>
               <h2 className='text-[2.6em]'>
@@ -65,6 +62,26 @@ const HeaderBlock: React.FunctionComponent<InterfaceHeaderBlock> = (props) => {
             </p> : null}
           </div>
         </div> : null}
+      <div className='w-[1220px] text-center'>
+        <div className="bg-headeLaptopLeft bg-no-repeat animate-moveRight absolute object-cover w-[630px] h-[445px] left-[23.8%] top-[16%] z-40">
+          <div className='bg-headeLaptopLeftScreen bg-no-repeat absolute w-[350px] h-[270px] left-[42.5%] top-[8.4%]'></div>
+          <div className='bg-headeLaptopLeftScreenBlink bg-no-repeat absolute brightness-200 w-[660px] h-[150px] left-[15%] top-[-10%]'></div>
+          {showHeadingEffect ?
+            <div className='bg-headeLaptopLeftScreenEffect bg-no-repeat bg-75% animate-fade3 absolute w-[732px] h-[408px] left-[31.6%] top-[-4.1%]'></div> : null}
+          <div className='absolute w-[67px] h-[48px] left-[102%] top-[24.2%] bg-black skew-x-minus24 uppercase'>
+            <div className='absolute bg-black h-[48px] w-[67px] skew-x-24 left-[-14px] top-[0px] text-center pl-[4px] pt-[8px] leading-none'>
+              <span className='font-EurostileBol text-[16px]'>s-serie</span><br />
+              <span className='text-[12px]'>p960</span>
+            </div>
+          </div>
+        </div>
+        <div className="bg-headeLaptopRight bg-no-repeat animate-moveLeft absolute object-cover w-[455px] h-[330px] left-[51.9%] top-[21.2%] z-0">
+          {showIntelLogo ?
+            <div className='bg-intelLogo animate-fade3 bg-no-repeat absolute w-[167px] h-[71px] left-[15%] top-[102.1%]'></div> : null}
+          {showNvidiaLogo ?
+            <div className='bg-nvidiaLogo animate-fade3 bg-no-repeat absolute bg-93% w-[167px] h-[51px] left-[57.2%] top-[105.5%]'></div> : null}
+        </div>
+      </div>
     </div>
   </>);
 };
