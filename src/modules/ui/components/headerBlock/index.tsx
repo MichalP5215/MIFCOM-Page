@@ -43,9 +43,9 @@ const HeaderBlock: React.FunctionComponent<InterfaceHeaderBlock> = (props) => {
 
 
   return (<>
-    <div className='container'>
+    <div className='container m-auto'>
       {showBacgroundImage ?
-        <div className={'animate-fade3 bg-headerBG bg-no-repeat h-[90vh] leading-none uppercase justify-center text-center'}>
+        <div className={'animate-fade3 relative bg-headerBG bg-no-repeat h-[870px] leading-none uppercase justify-center text-center'}>
           {showHeading ?
             <div className='animate-fade4 pt-[60px]'>
               <h2 className='text-[2.6em]'>
@@ -62,7 +62,7 @@ const HeaderBlock: React.FunctionComponent<InterfaceHeaderBlock> = (props) => {
             </p> : null}
           </div>
         </div> : null}
-      <div className='w-[1220px] text-center'>
+      <div className='w-[1220px] text-center  m-auto'>
         <div className="bg-headeLaptopLeft bg-no-repeat animate-moveRight absolute object-cover w-[630px] h-[445px] left-[23.8%] top-[16%] z-40">
           <div className='bg-headeLaptopLeftScreen bg-no-repeat absolute w-[350px] h-[270px] left-[42.5%] top-[8.4%]'></div>
           <div className='bg-headeLaptopLeftScreenBlink bg-no-repeat absolute brightness-200 w-[660px] h-[150px] left-[15%] top-[-10%]'></div>
@@ -75,7 +75,7 @@ const HeaderBlock: React.FunctionComponent<InterfaceHeaderBlock> = (props) => {
             </div>
           </div>
         </div>
-        <div className="bg-headeLaptopRight bg-no-repeat animate-moveLeft absolute object-cover w-[455px] h-[330px] left-[51.9%] top-[21.2%] z-0">
+        <div className="bg-headeLaptopRight bg-no-repeat animate-moveLeft absolute object-cover w-[455px] h-[330px] left-[51.9%] top-[21%] z-0">
           {showIntelLogo ?
             <div className='bg-intelLogo animate-fade3 bg-no-repeat absolute w-[167px] h-[71px] left-[15%] top-[102.1%]'></div> : null}
           {showNvidiaLogo ?

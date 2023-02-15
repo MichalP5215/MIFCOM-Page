@@ -14,6 +14,14 @@
   font-family: "Eurostile-Bol";
   src: url("./modules/assets/Fonts/Eurostile-Bol.otf");
 }
+@font-face {
+  font-family: "Eurostile-Med";
+  src: url("./modules/assets/Fonts/Eurostile-Med.otf");
+}
+@font-face {
+  font-family: "EurostileCon-Hea";
+  src: url("./modules/assets/Fonts/EurostileCon-Hea.otf");
+}
 
 body {
   margin: 0;
