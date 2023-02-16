@@ -24,7 +24,7 @@ export const IntelBlock: React.FunctionComponent<InterfaceIntelBlock> = (props) 
           <div className='bg-intelBlockIntelLogo bg-no-repeat w-[195px] h-[159px] absolute left-[14.1%] top-[10.7%] z-50 animate-intelLogo'></div>
         </div>
 
-        <div className='font-EurostileConHea drop-shadow-xl text-left mt-[-147px] ml-[292px] z-40'>
+        <div className='font-EurostileConHea drop-shadow-xl text-left mt-[-147px] xl:ml-[292px] lg:ml-[191px] z-40'>
           <p className='text-[36px] '>bis zu</p>
           <p className='text-[55px] '>5.0 ghz 1 8 kerne 16 threads</p>
         </div>

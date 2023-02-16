@@ -5,6 +5,19 @@ module.exports = {
 
   ],
   theme: {
+    screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1220px',
+      // => @media (min-width: 1280px) { ... }
+    },
     letterSpacing: {
       tightest: '1px',
     },
@@ -35,7 +48,10 @@ module.exports = {
         slideUp: 'slideUp 1s cubic-bezier(0.65, 0, 0.35, 1) both',
         moveRight: 'moveRight 3.5s linear alternate',
         moveLeft: 'moveLeft 3.5s linear alternate',
+        grayscale: 'grayscale 3.5s linear alternate',
         intelLogo: 'intelLogo 2.5s forwards',
+        nvidiaRTXCard: 'nvidiaRTXCard 3s forwards',
+        nvidiaRTXCardLaptopBP: 'nvidiaRTXCardLaptopBP 3s forwards',
       },
       keyframes: ({
         fadeIn3: {
@@ -51,20 +67,34 @@ module.exports = {
           '100%': { transform: 'translateY(0)' },
         },
         moveRight: {
-          '0%': { left: '18.8%', filter: "grayscale(100%)" },
-          '20%': { left: '18.8%', filter: "grayscale(100%)" },
-          '80%': { left: '23.8%', filter: "grayscale(0%)" },
-          '100%': { left: '23.8%', filter: "grayscale(0%)" },
+          '0%': { left: '-1%', filter: "grayscale(100%)" },
+          '20%': { left: '-1%', filter: "grayscale(100%)" },
+          '100%': { left: '9%', filter: "grayscale(0%)" },
         },
         moveLeft: {
-          '0%': { left: '55.9%', filter: "grayscale(100%)" },
-          '20%': { left: '55.9%', filter: "grayscale(100%)" },
-          '80%': { left: '51.9%', filter: "grayscale(0%)" },
-          '100%': { left: '51.9%', filter: "grayscale(0%)" },
+          '0%': { left: '63%', filter: "grayscale(100%)" },
+          '20%': { left: '63%', filter: "grayscale(100%)" },
+          '100%': { left: '53%', filter: "grayscale(0%)" },
+        },
+        grayscale: {
+          '0%': { filter: "grayscale(100%)" },
+          '20%': { filter: "grayscale(100%)" },
+          '100%': { filter: "grayscale(0%)" },
         },
         intelLogo: {
           '0%': { left: '35.1%', transform: "scale(.5)", opacity: 0 },
+          '20%': { left: '35.1%', transform: "scale(.5)", opacity: 0 },
           '100%': { left: '14.1%', transform: "scale(1)", opacity: 1 },
+        },
+        nvidiaRTXCard: {
+          '0%': { right: '-26%', transform: "scale(.5) translateY(0)", opacity: 0 },
+          '20%': { right: '-26%', transform: "scale(.5) translateY(0)", opacity: 0 },
+          '100%': { right: '-6%', transform: "scale(1) translateY(30%)", opacity: 1 },
+        },
+        nvidiaRTXCardLaptopBP: {
+          '0%': { right: '-26%', transform: "scale(.5) translateY(0)", opacity: 0 },
+          '20%': { right: '-26%', transform: "scale(.5) translateY(0)", opacity: 0 },
+          '100%': { right: '3.5%', transform: "scale(1) translateY(30%)", opacity: 1 },
         },
       }),
       colors: {
@@ -84,6 +114,9 @@ module.exports = {
         'intelBlockLaptop': "url('./modules/assets/IntelBlock/Laptop_intel_block.png')",
         'intelBlockIntelLogo': "url('./modules/assets/IntelBlock/intel-corei9-logo.png')",
         'nvidiaBlockBG': "url('./modules/assets/NvidiaBlock/Background_RTX_block.png')",
+        'nvidiaBlockLaptop': "url('./modules/assets/NvidiaBlock/Laptop_NVIDIA_block.png')",
+        'nvidiaBlockRTXlogo': "url('./modules/assets/NvidiaBlock/Nvidia_RTX_Logo.png')",
+        'nvidiaBlockRTXGraphicCard': "url('./modules/assets/NvidiaBlock/RTX_graphic_card.png')",
       },
       fontFamily: {
         EurostileReg: ['Eurostile-Reg', 'sans-serif'],
