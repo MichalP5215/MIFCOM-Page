@@ -5,9 +5,15 @@ module.exports = {
 
   ],
   theme: {
+    maxWidth: {
+      '300': '300px',
+    },
     screens: {
-      'sm': '640px',
-      // => @media (min-width: 640px) { ... }
+      'es': '375px',
+      // => @media (min-width: 425px) { ... }
+
+      'sm': '425px',
+      // => @media (min-width: 425px) { ... }
 
       'md': '768px',
       // => @media (min-width: 768px) { ... }
@@ -25,11 +31,14 @@ module.exports = {
       center: true,
     },
     backgroundSize: {
+      'cover': 'cover',
       '50%': '50%',
       '75%': '75%',
       '77%': '77%',
       '93%': '93%',
-      '16': '4rem',
+      '98%': '98%',
+      '100%': '100%',
+      '106%': '106.2%',
     },
     skew: {
       'minus24': '-24deg',

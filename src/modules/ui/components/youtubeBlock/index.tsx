@@ -14,7 +14,7 @@ const YoutubeBlock: React.FunctionComponent<InterfaceYoutubeBlock> = (props) => 
 
   return (<>
     {showYoutubePlayer ?
-      <div className='h-[565px]'>
+      <div className='h-[150px] md:h-[356px] lg:h-[565px]'>
         <iframe
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           title="GeForce Laptops: Worker by Day. Warrior by Night."

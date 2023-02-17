@@ -14,19 +14,19 @@ export const IntelBlock: React.FunctionComponent<InterfaceIntelBlock> = (props) 
 
   return (<>
     {showIntelBlock ?
-      <div className='bg-intelBlockBG h-[670px] bg-no-repeat leading-none uppercase justify-center text-center'>
-        <div className='pt-[50px] mb-[50px]'>
-          <h2 className='font-EurostileHeavy text-[2.6em]'>leistung auf desktop-niveau</h2>
-          <h1 className='text-[40px]'>jetzt in einem laptop</h1>
+      <div className='bg-intelBlockBG bg-top overflow-hidden h-[367px] md:h-[490px] lg:h-[670px] pl-[10px] pr-[10px] bg-no-repeat leading-none uppercase text-center'>
+        <div className='pt-[40px] lg:pt-[50px] mb-[20px] lg:mb-[50px]'>
+          <h2 className='font-EurostileHeavy text-[1.3em] lg:text-[2.6em] mb-[5px] lg:mb-0'>leistung auf desktop-niveau</h2>
+          <h1 className='text-[1.4em] lg:text-[40px]'>jetzt in einem laptop</h1>
         </div>
-        <p className='text-[24px] font-EurostileMed mb-8'>9th gen intel® core™ i9-9980HK prozessor</p>
-        <div className='bg-intelBlockLaptop bg-no-repeat w-[728px] h-[399px] m-auto relative'>
-          <div className='bg-intelBlockIntelLogo bg-no-repeat w-[195px] h-[159px] absolute left-[14.1%] top-[10.7%] z-50 animate-intelLogo'></div>
+        <p className='text-[14px] lg:text-[24px] font-EurostileMed mb-6 lg:mb-8 lg:leading-none leading-normal'>9th gen intel® core™ i9-9980HK prozessor</p>
+        <div className='bg-intelBlockLaptop bg-100% bg-no-repeat w-[288px] h-[200px] lg:w-[728px] lg:h-[399px] m-auto relative'>
+          <div className='bg-intelBlockIntelLogo bg-100% bg-no-repeat w-[65px] h-[65px] lg:w-[195px] lg:h-[159px] absolute left-[14.1%] top-[10.7%] z-50 animate-intelLogo'></div>
         </div>
 
-        <div className='font-EurostileConHea drop-shadow-xl text-left mt-[-147px] xl:ml-[292px] lg:ml-[191px] z-40'>
-          <p className='text-[36px] '>bis zu</p>
-          <p className='text-[55px] '>5.0 ghz 1 8 kerne 16 threads</p>
+        <div className='font-EurostileConHea drop-shadow-xl text-left mt-[-143px] lg:mt-[-147px] xl:ml-[284px] lg:ml-[191px] ml-[4px] z-40'>
+          <p className='text-[18px] lg:text-[36px] '>bis zu</p>
+          <p className='text-[30px] lg:text-[55px]'>5.0 ghz 1 8 kerne 16 threads</p>
         </div>
       </div> : null}
   </>);
