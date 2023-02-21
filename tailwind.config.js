@@ -6,7 +6,10 @@ module.exports = {
   ],
   theme: {
     maxWidth: {
-      '300': '300px',
+      'xs': '320px',
+      'sm': '360px',
+      'md': '375px',
+      'none': 'none',
     },
     screens: {
       'es': '375px',
@@ -126,6 +129,7 @@ module.exports = {
         'nvidiaBlockLaptop': "url('./modules/assets/NvidiaBlock/Laptop_NVIDIA_block.png')",
         'nvidiaBlockRTXlogo': "url('./modules/assets/NvidiaBlock/Nvidia_RTX_Logo.png')",
         'nvidiaBlockRTXGraphicCard': "url('./modules/assets/NvidiaBlock/RTX_graphic_card.png')",
+        'gamingLaptopsBlockE-SeriesBG': "url('./modules/assets/GamingLaptopsBlock/E-SeriesBG.png')",
       },
       fontFamily: {
         EurostileReg: ['Eurostile-Reg', 'sans-serif'],
