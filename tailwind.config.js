@@ -111,7 +111,9 @@ module.exports = {
       }),
       colors: {
         gray: '#828282',
-        green: '#45ba00'
+        green: '#45ba00',
+        blackStart: 'rgba(0,0,0,.95)',
+        blackEnd: 'rgba(0,0,0,0)'
       },
       backgroundImage: {
         'headerBG': "url('./modules/assets/Header/title_background.png')",
@@ -130,6 +132,14 @@ module.exports = {
         'nvidiaBlockRTXlogo': "url('./modules/assets/NvidiaBlock/Nvidia_RTX_Logo.png')",
         'nvidiaBlockRTXGraphicCard': "url('./modules/assets/NvidiaBlock/RTX_graphic_card.png')",
         'gamingLaptopsBlockE-SeriesBG': "url('./modules/assets/GamingLaptopsBlock/E-SeriesBG.png')",
+        'gamingLaptopsBlockS-SeriesBG': "url('./modules/assets/GamingLaptopsBlock/S-Series.png')",
+        'gamingLaptopsBlockX-SeriesBG': "url('./modules/assets/GamingLaptopsBlock/X-Series.png')",
+        'gamingLaptopsBlockLaptop_block_S-serie': "url('./modules/assets/GamingLaptopsBlock/Laptop_block_S-serie.png')",
+        'gamingLaptopsBlockLaptop_Block_E-serie': "url('./modules/assets/GamingLaptopsBlock/Laptop_Block_E-serie.png')",
+        'gamingLaptopsBlockLaptop_block_S-MaxQ_serie': "url('./modules/assets/GamingLaptopsBlock/Laptop_block_S-MaxQ_serie.png')",
+        'gamingLaptopsBlockLaptop_Block_x-Serie': "url('./modules/assets/GamingLaptopsBlock/Laptop_Block_x-Serie.png')",
+        'gamingLaptopsBlockUSB_ICON': "url('./modules/assets/GamingLaptopsBlock/USB_ICON.png')",
+        'gamingLaptopsBlockPorts_icon': "url('./modules/assets/GamingLaptopsBlock/ports_icon.png')",
       },
       fontFamily: {
         EurostileReg: ['Eurostile-Reg', 'sans-serif'],
