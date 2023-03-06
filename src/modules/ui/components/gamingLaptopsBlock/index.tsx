@@ -21,7 +21,7 @@ const GamingLaptopsBlock: React.FunctionComponent<InterfaceGamingLaptopsBlock> =
       category: 'e-serie',
       toggleClass: 'w-[400%]',
       secondCategory: '\u00A0',
-      wrapperCategoryClass: 'top-[40.5%] left-[14.3%] skew-x-[-28deg] ',
+      wrapperCategoryClass: 'top-[37.7%] left-[0%] lg:top-[40.5%] lg:left-[14.3%] skew-x-[-28deg] ',
       categotyClass: 'skew-x-[28deg]',
       backGround: 'bg-gamingLaptopsBlockE-SeriesBG',
       titleCategory: 'Perfomance',
@@ -61,7 +61,7 @@ const GamingLaptopsBlock: React.FunctionComponent<InterfaceGamingLaptopsBlock> =
       category: 's-serie',
       secondCategory: '\u00A0',
       toggleClass: 'ml-[-100%] w-[400%]',
-      wrapperCategoryClass: 'top-[40.5%] xl:left-[22.9%] lg:left-[23.9%] skew-x-[-28deg]',
+      wrapperCategoryClass: 'top-[42.8%] left-[0%] lg:top-[40.5%] xl:left-[22.9%] lg:left-[23.9%] skew-x-[-28deg]',
       categotyClass: 'skew-x-[28deg] mr-[38px]',
       backGround: 'bg-gamingLaptopsBlockS-SeriesBG',
       titleCategory: 'Perfomance',
@@ -101,7 +101,7 @@ const GamingLaptopsBlock: React.FunctionComponent<InterfaceGamingLaptopsBlock> =
       category: 's-serie',
       secondCategory: '(max-q design)',
       toggleClass: 'ml-[-200%] w-[400%]',
-      wrapperCategoryClass: 'top-[40.5%] xl:left-[32.1%] lg:left-[34.1%] skew-x-[-28deg]',
+      wrapperCategoryClass: 'top-[48%] left-[0%] lg:top-[40.5%] xl:left-[32.1%] lg:left-[34.1%] skew-x-[-28deg]',
       categotyClass: 'skew-x-[28deg] mr-[40px]',
       categotySecondClass: 'ml-[-28px] skew-x-[28deg]',
       backGround: 'bg-gamingLaptopsBlockE-SeriesBG',
@@ -142,7 +142,7 @@ const GamingLaptopsBlock: React.FunctionComponent<InterfaceGamingLaptopsBlock> =
       category: 'x-serie',
       secondCategory: '(max-q design)',
       toggleClass: 'ml-[-300%] w-[400%]',
-      wrapperCategoryClass: 'top-[40.5%] xl:left-[41.2%] lg:left-[44.2%] ',
+      wrapperCategoryClass: 'top-[53.1%] left-[0%] lg:top-[40.5%] xl:left-[41.2%] lg:left-[44.2%] ',
       categotyClass: '',
       backGround: 'bg-gamingLaptopsBlockX-SeriesBG',
       titleCategory: 'Perfomance',
@@ -199,10 +199,10 @@ const GamingLaptopsBlock: React.FunctionComponent<InterfaceGamingLaptopsBlock> =
               </div>
               <Collapse isOpened={open === index} className='overflow-hidden'>
                 <div className={data.backGround + ' bg-top bg-no-repeat h-[971px] es:h-[952px] lg:h-[751px] leading-none uppercase overflow-hidden z-0'}>
-                  <div className='bg-opacity-30 bg-black px-[10px] h-[348px]'>
-                    <h2 className='font-EurostileBol text-[1.3em] lg:text-[40px] lg:mb-[50px] text-center'>Angepasst an deine Bedürfnisse</h2>
-                    <div className='ml-[14.5%]'>
-                      <h3 className='font-EurostileBol lg:text-[30px] mb-[35px]'>{data.title}</h3>
+                  <div className='bg-opacity-30 bg-black px-[10px] py-[30px] lg:py-[0px] lg:h-[348px] h-[366px]'>
+                    <h2 className='font-EurostileBol text-[1.4em] lg:text-[40px] lg:mb-[50px] text-center'>Angepasst an deine Bedürfnisse</h2>
+                    <div className='lg:ml-[14.5%] mt-[51px] lg:mt-0 text-center lg:text-left'>
+                      <h3 className='font-EurostileBol lg:text-[30px] mb-[35px] text-[1.2em]'>{data.title}</h3>
                       <p className='text-[16px] leading-[1.3] normal-case mb-[20px]'>Schließe Deine Peripheriegeräte über die schnellen <b className='Eurostile-Bol'>USB 3.0-Ports</b> an , und , <br />
                         erlebe Dein Spiel auf bis zu <b className='Eurostile-Bol'>3 Monitore</b> über HDMI oder DisplayPort.</p>
                       <p className='text-[16px] leading-[1.3] normal-case mb-[20px]'>High-Speed-Ethernet oder Wireless-AC sind natürlich auch mit von der Partie.</p>
@@ -237,7 +237,7 @@ const GamingLaptopsBlock: React.FunctionComponent<InterfaceGamingLaptopsBlock> =
                         <span className='font-EurostileBol text-[15px] text-[#666] normal-case mt-[4px]'>{data.monitorPortTitle}</span>
                       </p>
                     </div>
-                    <div className={data.laptopItemBG + ' absolute bg-no-repeat xl:right-[-9.5%] lg:right-[-23.5%] bottom-[4%] w-[806px] h-[532px]'}></div>
+                    <div className={data.laptopItemBG + ' absolute bg-no-repeat bg-90% xl:right-[-9.5%] lg:right-[-23.5%] lg:top-[-23%] right-[-25%] top-[-6.5%] bottom-[4%] w-[378px] h-[257px] lg:w-[806px] lg:h-[532px]'}></div>
                   </div>
                 </div>
               </Collapse>
