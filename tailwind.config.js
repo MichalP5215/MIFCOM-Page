@@ -35,6 +35,7 @@ module.exports = {
     },
     backgroundSize: {
       'cover': 'cover',
+      '25%': '25%',
       '50%': '50%',
       '75%': '75%',
       '77%': '77%',
@@ -51,6 +52,7 @@ module.exports = {
     extend: {
       lineHeight: {
         '2': '.65rem',
+        '3': '1.3',
       },
       dropShadow: {
         'xl': '-1px 0 5px #000',
@@ -141,6 +143,21 @@ module.exports = {
         'gamingLaptopsBlockLaptop_Block_x-Serie': "url('./modules/assets/GamingLaptopsBlock/Laptop_Block_x-Serie.png')",
         'gamingLaptopsBlockUSB_ICON': "url('./modules/assets/GamingLaptopsBlock/USB_ICON.png')",
         'gamingLaptopsBlockPorts_icon': "url('./modules/assets/GamingLaptopsBlock/ports_icon.png')",
+        'iconCPU': "url('./modules/assets/ComparisonBlock/Icons/CPU_icon.png')",
+        // 'icons
+        'iconGPU' : "url('./modules/assets/ComparisonBlock/Icons/gpu_icon.png')",
+        'iconRAM' : "url('./modules/assets/ComparisonBlock/Icons/RAM.png')",
+        'iconSSD' : "url('./modules/assets/ComparisonBlock/Icons/SSD_HDD.png')",
+        'iconKEYBOARD' : "url('./modules/assets/ComparisonBlock/Icons/keyboard_icon.png')",
+        'iconRESOLUTION' : "url('./modules/assets/ComparisonBlock/Icons/resolution_icon.png')",
+        'iconTHUNDER' : "url('./modules/assets/ComparisonBlock/Icons/thunderbolt_icon.png')",
+        'iconUSB' : "url('./modules/assets/ComparisonBlock/Icons/USB_ICON.png')",
+        'iconPORT' : "url('./modules/assets/ComparisonBlock/Icons/ports_icon.png')",
+        'iconSPEAKER' : "url('./modules/assets/ComparisonBlock/Icons/speaker_icon.png')",
+        'iconWEIGHT' : "url('./modules/assets/ComparisonBlock/Icons/weight_icon.png')",
+        // features
+        'rgb': "url('./modules/assets/ComparisonBlock/rgb.png')",
+        'i7Logo': "url('./modules/assets/ComparisonBlock/Logos/i7_Logo.png')",
       },
       fontFamily: {
         EurostileReg: ['Eurostile-Reg', 'sans-serif'],
@@ -148,6 +165,7 @@ module.exports = {
         EurostileBol: ['Eurostile-Bol', 'sans-serif'],
         EurostileMed: ['Eurostile-Med', 'sans-serif'],
         EurostileConHea: ['EurostileCon-Hea', 'sans-serif'],
+        Arial: ['Arial', 'sans-serif']
       },
     },
   },
